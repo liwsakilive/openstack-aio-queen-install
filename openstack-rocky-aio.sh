@@ -22,6 +22,4 @@ for f in $(ls -1 /etc/openstack_deploy/conf.d/*.aio); do mv -v ${f} ${f%.*}; don
 
 cd /opt/openstack-ansible/playbooks
 
-openstack-ansible setup-hosts.yml
-openstack-ansible setup-infrastructure.yml
-openstack-ansible setup-openstack.yml
+openstack-ansible setup-hosts.yml && openstack-ansible setup-infrastructure.yml && openstack-ansible setup-openstack.yml
