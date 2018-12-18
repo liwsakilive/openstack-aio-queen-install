@@ -1,7 +1,7 @@
 #!/bin/bash
 
-apt-get update
-apt-get dist-upgrade
+apt-get update -y
+apt-get dist-upgrade -y
 apt-get install -y git vim python unzip iotop htop iftop
 
 git clone -b 18.0.0 https://github.com/openstack/openstack-ansible /opt/openstack-ansible
