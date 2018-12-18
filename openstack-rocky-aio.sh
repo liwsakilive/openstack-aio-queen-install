@@ -1,6 +1,4 @@
-#!/usr/bin/
-
-set -e -x -u
+#!/bin/bash
 
 apt-get update
 apt-get dist-upgrade
